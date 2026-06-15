@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: dim_account
+    description: "Измерение с активни банкови сметки"
+    columns:
+      - name: account_id
+        description: "Уникален идентификатор на сметката"
+      - name: customer_name
+        description: "Име на клиента"
+      - name: status
+        description: "Статус на сметката – само ACTIVE"
+
+  - name: fct_transactions
+    description: "Факт таблица с всички транзакции по карти"
+    columns:
+      - name: transaction_id
+        description: "Уникален идентификатор на транзакцията"
+      - name: amount
+        description: "Сума в валутата на транзакцията"
+      - name: txn_type
+        description: "Тип транзакция (PURCHASE, WITHDRAWAL, REFUND)"

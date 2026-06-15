@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: source
+    description: "Raw tables from source system"
+    database: dbtest
+    schema: source
+    tables:
+      - name: account
+        description: "custommer accounts"
+      - name: card
+        description: "cards - debit or credit"
+      - name: transaction
+        description: "card transactions"
